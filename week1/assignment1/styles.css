@@ -1,0 +1,107 @@
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  font-size: 2.5rem;
+}
+.gapSize {
+  gap: 3rem;
+}
+.centerFlex {
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.fullBlock {
+  width: 100%;
+  height: 100vh;
+  background-color: #f1d4d2;
+}
+.headerBlock {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.headerBlock h1 {
+  font-size: 3rem;
+}
+.descriptionBlock {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionBlock__elem {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.descriptionBlock img {
+  width: 30%;
+}
+.descriptionBlock p {
+  font-size: 1.2rem;
+  padding: 5rem;
+  width: 50%;
+  border-radius: 5rem;
+  background-color: rgb(238, 238, 238);
+}
+.home {
+  background-color: #f1d4d2;
+}
+.home img {
+  width: 50vw;
+}
+.videoBlock {
+  flex-direction: column;
+}
+
+.videoBlock video {
+  border-radius: 2rem;
+}
+.fanArtBlock {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fanArtBlock__elem {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.fanArtBlock img {
+  border-radius: 2rem;
+  width: 25%;
+}
+.navigationButton {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+  border-radius: 1.5rem;
+  border: none;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+  font-size: 1.2rem;
+  padding: 0.8em 1.2em;
+  background-color: #ff6961;
+  color: white;
+}
+.navigationButton:hover {
+  opacity: 0.5;
+}
