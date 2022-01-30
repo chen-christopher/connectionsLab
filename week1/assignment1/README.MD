@@ -9,6 +9,8 @@ https://chen-christopher.github.io/connectionsLab/week1/assignment1/
 ### Process
 
 The landing page is an image centered using flexbox. For my projects, I like to create blocks that are 100% in width and 100vh so that it encapusalates the entire screen. I use a general flexbox class that centers the image. The following pages all follow a similar format. The description section utilizes the same flex classes but has the flex direction to column so that the header text is above the image and paragraph. The image and paragraph is then put into another flexbox with flex direction set to row. The video section utilizes the same column flexbox with the items centered. Lastly, the fan art section follows the description section with a full screen flexbox with flex direction column and the images in a flex direction row div. The wireframe of this assignment is attached below: 
+![wireframe1](wireframe1.jpeg)
+![wireframe2](wireframe2.jpeg)
 
 ### Reflection
 
