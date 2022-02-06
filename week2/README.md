@@ -6,6 +6,9 @@ For this project, I wanted to create some type of interaction with art. As techn
 
 This assignment has two interactions: one with hover and the other with a click. The hover interaction is done witth purely CSS while the clicking interaction uses JavaScript. In this assignment, I split an art work into three separate sections and inside each of these sections there contains a few characters which are hidden. By hovering over a section, the characters within the section will show up. Lastly, by clicking any section, the three sections combine together forming the actual art piece with all the characters shown.
 
+The link to the webpage is below:
+https://chen-christopher.github.io/connectionsLab/week2
+
 ### Process
 
 Before I started coding, the images themselves needed some preprocessing. The original image itself had to be divided into three sections equally. I was given the characters as separate images which helped with positioning the characters within the painting.
