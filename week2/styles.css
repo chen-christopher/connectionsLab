@@ -1,0 +1,114 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #f8f8ff;
+}
+/*general classes */
+.flex {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8ff;
+}
+
+.edgeContent {
+  border-radius: 1rem 0 0 1rem;
+}
+.edgeContent2 {
+  border-radius: 0 1rem 1rem 0;
+}
+.rounded {
+  border-radius: 1rem;
+}
+
+.shiftContent {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.content__bridgeBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 95%;
+  cursor: pointer;
+}
+.content__bridgeBlock img {
+  height: 100%;
+  width: auto;
+}
+.content__bridgeBlock--left {
+  position: relative;
+}
+.content__bridgeBlock--center {
+  position: relative;
+}
+.content__bridgeBlock--right {
+  position: relative;
+}
+.content__bridgeBlock__charBlock {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.content__bridgeBlock__charBlock:hover {
+  opacity: 1;
+}
+.content__bridgeBlock__charBlock img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@keyframes mergeImg {
+  /* 0% {
+    margin-left: 2%;
+    margin-right: 2%;
+  } */
+  100% {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+@keyframes separateImg {
+  0% {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  100% {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+.mergeImgAnim {
+  animation: 0.5s mergeImg forwards;
+}
+.seperateImgAnim {
+  animation: 1s separateImg forwards;
+}
+
+.opacityFull {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .content__bridgeBlock {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content__bridgeBlock {
+    height: 40%;
+  }
+}

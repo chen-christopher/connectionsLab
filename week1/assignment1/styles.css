@@ -105,3 +105,16 @@ h2 {
 .navigationButton:hover {
   opacity: 0.5;
 }
+
+@media only screen and (max-width: 640px) {
+  .fanArtBlock__elem {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+  }
+  .fanArtBlock img {
+    border-radius: 2rem;
+    width: 25%;
+  }
+}

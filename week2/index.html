@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Painting Animation</title>
+  </head>
+  <body>
+    <section class="content flex">
+      <div class="content__bridgeBlock content__bridgeBlock--left shiftContent">
+        <img
+          class="content__bridgeBlock__img edgeContent rounded"
+          src="images/bridge/emptyBackground1.jpg"
+        />
+        <div class="content__bridgeBlock__charBlock">
+          <img src="images/bridge/characters/left2cropped.png" />
+          <img src="images/bridge/characters/boatcropped1.png" />
+        </div>
+      </div>
+      <div class="content__bridgeBlock content__bridgeBlock--center">
+        <img
+          class="content__bridgeBlock__img rounded"
+          src="images/bridge/emptyBackground2.jpg"
+        />
+        <div class="content__bridgeBlock__charBlock">
+          <img src="images/bridge/characters/lefthalfcropped.png" />
+          <img src="images/bridge/characters/righthalfcropped2.png" />
+          <img src="images/bridge/characters/boatcropped2.png" />
+          <img src="images/bridge/characters/left2cropped2.png" />
+        </div>
+      </div>
+      <div
+        class="content__bridgeBlock content__bridgeBlock--right shiftContent"
+      >
+        <img
+          class="content__bridgeBlock__img edgeContent2 rounded"
+          src="images/bridge/emptyBackground3.jpg"
+        />
+        <div class="content__bridgeBlock__charBlock">
+          <img src="images/bridge/characters/rightcropped.png" />
+          <img src="images/bridge/characters/righthalfcropped1.png" />
+          <img src="images/bridge/characters/boatcropped3.png" />
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      (function () {
+        app.initialize();
+      })();
+    </script>
+  </body>
+</html>
