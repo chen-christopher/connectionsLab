@@ -1,0 +1,50 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pokemon_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pokemon_block_img {
+  width: 10%;
+  animation: MoveUpDown 1s linear infinite;
+  transition: 0.2s ease-in-out;
+}
+.pokemon_block_img:hover {
+  opacity: 0.5;
+}
+.landing_block_img {
+  width: 50vw;
+}
+
+.battle_block {
+  background-image: url("battlebackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: auto;
+  height: 100vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.battle_block_img {
+  height: 50vh;
+  width: auto;
+  position: absolute;
+  left: 75%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
