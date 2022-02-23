@@ -17,7 +17,7 @@ body,
   background-size: fit;
 }
 .pokeBox_pokemon_header_block {
-  width: 50%;
+  width: 55%;
   height: 15vh;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body,
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  width: 70%;
+  width: 75%;
   height: auto;
   background-color: #f8f8f8;
   border: 0.5rem solid #908058;
@@ -61,6 +61,19 @@ body,
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+}
+.battle_block_content_backgroundImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: slideInRL 2s;
+}
+.slideRL {
+  animation: slideInRL 2s;
+}
+.slideLR {
+  animation: slideInLR 2s;
 }
 .battle_block_img {
   height: 50vh;
@@ -133,6 +146,15 @@ body,
   background-color: #f9f9f9;
   border-radius: 1rem;
   font-size: 2rem;
+  border: 1rem solid orange;
+}
+.battle_block_choice_layer {
+  /* padding: 1rem 2rem 1rem 2rem; */
+  width: 98%;
+  height: 17.5vh;
+  background-color: #f9f9f9;
+  border: 1rem solid #7c79b0;
+  border-radius: 1rem;
 }
 .battle_block_choice {
   display: flex;
@@ -143,19 +165,20 @@ body,
   right: 0;
   width: 40%;
   height: 20vh;
-  background-color: white;
+  background-color: #283030;
   border-radius: 0.2rem;
-  border: 0.5rem solid black;
+  border: 0.5rem solid #283030;
 }
 .battle_block_choice_button_block {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   width: 100%;
 }
 .battle_block_choice_button {
   font-size: 4rem;
-  width: 25%;
+  width: 40%;
   background: none;
   border: none;
 }
