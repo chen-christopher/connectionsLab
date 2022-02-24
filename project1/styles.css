@@ -27,11 +27,11 @@ body,
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: lightcyan;
+  background-color: rgb(230, 252, 252);
 }
 .opening_block_bg {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   width: 25%;
 }
 .opening_block_img {
@@ -80,7 +80,7 @@ body,
   flex-direction: column;
   gap: 2rem;
   background-image: url(./images/largebackground.png);
-  background-size: contain;
+  background-size: fit;
 }
 .pokeBox_pokemon_header_block {
   width: 55%;
