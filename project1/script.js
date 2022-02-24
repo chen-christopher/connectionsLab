@@ -1,5 +1,8 @@
 const app = {
   initialize: async () => {
+    document
+      .querySelector(".opening_text_block_layer")
+      .addEventListener("click", app.showMessages);
     await fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
       .then((response) => response.json())
       .then(async (data) => {
@@ -25,7 +28,34 @@ const app = {
         }
       });
   },
+  counter: 0,
+  messages: [
+    "Welcome to the world of POKEMON!",
+    "My name is OAK.",
+    "People affectionately refer to me <br/> as the POKEMON professor.",
+    "This world...",
+    " ... is inhabitated by creatures far and wide <br/>called POKEMON",
+    "For some people, POKEMON are pets.<br/>Others use them for battling.",
+    "As for myself...",
+    "I study POKEMON as a profession.",
+    "We have recently invented a device that allows you <br /> to meet different kinds of POKEMON!",
+    " To use it, simply click on a POKEMON <br/> you would like to meet.",
+    "Let's get started!",
+  ],
+  showMessages: () => {
+    app.clickSound.load();
+    app.clickSound.play();
+    if (app.counter < app.messages.length) {
+      document.querySelector("#oakText").innerHTML = app.messages[app.counter];
+      app.counter++;
+    } else {
+      document.querySelector("#opening_section").classList.add("none");
+      document.querySelector(".pokeBox_block").classList.remove("none");
+      app.switchScreen();
+    }
+  },
   battleText: document.querySelector(".battle_block_text_layer"),
+  pokemonCries: document.getElementById("pokemonCries"),
   pokemonPage: (e) => {
     document.querySelector(".pokedex_block").classList.add("none");
     const battleBlock = document.querySelector(".battle_block");
@@ -63,12 +93,13 @@ const app = {
         app.battleText.innerText = `A wild ${app.capitalize(
           data.name
         )} has appeared.`;
+        app.pokemonCries.setAttribute("src", `./cries/${data.id}.ogg`);
+        app.pokemonCries.load();
+        setTimeout(() => {
+          app.pokemonCries.play();
+        }, 2500);
 
         setTimeout(() => {
-          // pokemonImg.classList.add("slideLR");
-          // rightBG.classList.remove("slideLRBackground");
-          // charImg.classList.remove("slideRL");
-          // leftBG.classList.remove("slideRL");
           choice.classList.remove("lowOpacity");
           app.battleText.innerHTML = "What will<br/> YOU do?";
         }, 3000);
@@ -86,17 +117,28 @@ const app = {
           );
       });
   },
+  dataName: document.createElement("h3"),
+  dataHeight: document.createElement("h3"),
+  dataWeight: document.createElement("h3"),
+  dataGenus: document.createElement("h3"),
+  dataDescription: document.createElement("h3"),
   showDescription: async (pokeDescription, height, weight, name, id) => {
+    app.clickSound.load();
+    app.clickSound.play();
+    setTimeout(() => {
+      app.pokedexSound.load();
+      app.pokedexSound.play();
+    }, 300);
     app.battleText.innerHTML = "You used the Pokedex.";
     newID = String(id).padStart(3, "0");
     name = app.capitalize(name);
     console.log(name);
     console.log("new", newID);
     const pokedexDiv = document.querySelector(".pokedex_block");
-    while (pokedexDiv.firstChild) {
-      pokedexDiv.removeChild(pokedexDiv.lastChild);
-      console.log("removing!@#!@#@!#");
-    }
+    // while (pokedexDiv.firstChild) {
+    //   pokedexDiv.removeChild(pokedexDiv.lastChild);
+    //   console.log("removing!@#!@#@!#");
+    // }
 
     await fetch(pokeDescription)
       .then((response) => response.json())
@@ -107,27 +149,33 @@ const app = {
           " "
         );
         genera = data.genera[7].genus;
-        dataName = document.createElement("h3");
-        dataHeight = document.createElement("h3");
-        dataWeight = document.createElement("h3");
-        dataGenus = document.createElement("h3");
-        dataDescription = document.createElement("h3");
-        dataName.innerText = `No ${newID}: ${name}`;
-        dataGenus.innerText = genera;
-        dataHeight.innerText = `Height:\t\t${height}m`;
-        dataWeight.innerText = `Weight:\t\t${weight}kg`;
-        dataDescription.innerText = `-----------------------------------\n${description}`;
-        pokedexDiv.appendChild(dataName);
-        pokedexDiv.appendChild(dataGenus);
-        pokedexDiv.appendChild(dataHeight);
-        pokedexDiv.appendChild(dataWeight);
-        pokedexDiv.appendChild(dataDescription);
+
+        app.dataName.innerText = `No ${newID}: ${name}`;
+        app.dataGenus.innerText = genera;
+        app.dataHeight.innerText = `Height:\t\t${height}m`;
+        app.dataWeight.innerText = `Weight:\t\t${weight}kg`;
+        app.dataDescription.innerText = `-----------------------------------\n${description}`;
+        pokedexDiv.appendChild(app.dataName);
+        pokedexDiv.appendChild(app.dataGenus);
+        pokedexDiv.appendChild(app.dataHeight);
+        pokedexDiv.appendChild(app.dataWeight);
+        pokedexDiv.appendChild(app.dataDescription);
         pokedexDiv.classList.remove("none");
       });
   },
+  runAwaySound: new Audio("./cries/run.mp3"),
+  clickSound: new Audio("./cries/click.wav"),
+  pokedexSound: new Audio("./cries/pokedex.wav"),
   runAway: () => {
+    app.clickSound.load();
+    app.clickSound.play();
     console.log("I RAN AWAY");
     app.battleText.innerHTML = "You ran away...";
+    setTimeout(() => {
+      app.runAwaySound.load();
+      app.runAwaySound.play();
+    }, 300);
+
     setTimeout(() => {
       app.switchScreen();
       app.reset();

@@ -19,6 +19,45 @@ body,
   position: absolute;
   z-index: 100;
 }
+.opening_block {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: lightcyan;
+}
+.opening_block_bg {
+  position: absolute;
+  bottom: 20%;
+  width: 25%;
+}
+.opening_block_img {
+  width: 20%;
+  height: auto;
+  z-index: 10;
+}
+.opening_text_block {
+  background-color: #283030;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.opening_text_block_layer {
+  width: 98%;
+  height: 17.5vh;
+  padding-left: 2rem;
+  background-color: #f9f9f9;
+  border: 1rem solid #84afa3;
+  border-radius: 1rem;
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
 .pokedex_block {
   position: absolute;
   z-index: 10;
@@ -93,10 +132,10 @@ body,
   height: 100%;
 }
 .slideRL {
-  animation: slideInRL 2s;
+  animation: slideInRL 2.5s;
 }
 .slideLR {
-  animation: slideInLR 2s;
+  animation: slideInLR 2.5s;
 }
 .battle_block_img {
   height: 50vh;
@@ -122,7 +161,7 @@ body,
   }
 }
 .slideLRBackground {
-  animation: slideInLRBg 2s;
+  animation: slideInLRBg 2.5s;
 }
 @keyframes slideInLRBg {
   0% {
