@@ -135,10 +135,6 @@ const app = {
     console.log(name);
     console.log("new", newID);
     const pokedexDiv = document.querySelector(".pokedex_block");
-    // while (pokedexDiv.firstChild) {
-    //   pokedexDiv.removeChild(pokedexDiv.lastChild);
-    //   console.log("removing!@#!@#@!#");
-    // }
 
     await fetch(pokeDescription)
       .then((response) => response.json())
