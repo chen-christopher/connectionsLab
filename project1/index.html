@@ -15,18 +15,22 @@
     <!-- <div class="landing_block">
       <h1>Pokedex</h1>
     </div> -->
-    <div class="battle_block">
+    <div class="black_screen none"></div>
+    <div class="battle_block none">
+      <div class="pokedex_block none"></div>
       <div class="battle_block_content">
         <img
-          class="battle_block_content_charImg"
+          class="lowOpacity battle_block_content_charImg"
           src="./images/charBackM.png"
         />
         <img
-          class="battle_block_content_backgroundImg"
+          id="leftBG"
+          class="lowOpacity battle_block_content_backgroundImg"
           src="./images/battlebackgroundLeft.png"
         />
         <img
-          class="battle_block_content_backgroundImg"
+          id="rightBG"
+          class="lowOpacity battle_block_content_backgroundImg"
           src="./images/battlebackgroundRight.png"
         />
 
@@ -36,23 +40,19 @@
         />
       </div>
       <div class="battle_block_text">
-        <div class="battle_block_text_layer">
-          A WILD [INSERT POKEMON] HAS APPEARED!!!<br />
-          WHAT WILL <br />
-          YOU DO?
-        </div>
-        <div class="battle_block_choice">
+        <div class="battle_block_text_layer"></div>
+        <div class="battle_block_choice lowOpacity">
           <div class="battle_block_choice_layer">
             <div class="battle_block_choice_button_block">
               <button id="examine" class="battle_block_choice_button">
                 EXAMINE
               </button>
-              <button class="battle_block_choice_button">BAIT</button>
+              <button id="run" class="battle_block_choice_button">RUN</button>
             </div>
-            <div class="battle_block_choice_button_block">
+            <!-- <div class="battle_block_choice_button_block">
               <button class="battle_block_choice_button">ROCK</button>
-              <button class="battle_block_choice_button">RUN</button>
-            </div>
+              <button id="run" class="battle_block_choice_button">RUN</button>
+            </div> -->
           </div>
         </div>
       </div>
