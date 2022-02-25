@@ -17,16 +17,16 @@ https://chen-christopher.github.io/connectionsLab/project1/
 ### User Interactions
 
 The interactions on this web page are relatively simple. At the beginning, the user is shown the opening sequence from the Pokemon games and by clicking it shows the next text.
-!(Professor Oak)[./documentationImages/oak.png]
+![Professor Oak](./documentationImages/oak.png)
 
 Afterwards, users are able to click on any of the Pokemon icons in the Pokemon box.
-!(Pokemon Box)[./documentationImages/box.png]
+![Pokemon Box](./documentationImages/box.png)
 
 This then opens the battle sequence where users are able to press either examine or run away.
-!(Pokemon Encounter)[./documentationImages/battle.png]
+![Pokemon Encounter](./documentationImages/battle.png)
 
 By clicking on examine, the Pokedex entry opens up.
-!(Pokedex)[./documentationImages/pokedex.png]
+![Pokedex](./documentationImages/pokedex.png)
 
 ### Process
 
@@ -101,4 +101,4 @@ There were not any particular stand out challenges for this project. Most of the
 
 ### Credit
 
-Most of the images were taken from the (PokeApi)[https://pokeapi.co/] or (Bulbagarden)[https://archives.bulbagarden.net/wiki/Category:Game_sprites].
+Most of the images were taken from the [PokeApi](https://pokeapi.co/) or [Bulbagarden](https://archives.bulbagarden.net/wiki/Category:Game_sprites).
