@@ -1,4 +1,6 @@
 const app = {
+  //initialize by adding event listeners to the text block and calling fetch on first 151 pokemon
+  //added async and await so that the pokemon would load in sequence
   initialize: async () => {
     document
       .querySelector(".opening_text_block_layer")
@@ -9,6 +11,8 @@ const app = {
         const pokemonBlock = document.querySelector(".pokeBox_pokemon_block");
         allPokemon = data.results;
         console.log(allPokemon);
+        //get all 151 pokemon, loop through, and get each independent pokemon's data and load them onto the page
+        //adds event listener for when u click it so that it'll load the image on the battle screen
         for (let i = 0; i < allPokemon.length; i++) {
           await fetch(allPokemon[i].url)
             .then((response) => response.json())
@@ -27,6 +31,9 @@ const app = {
         }
       });
   },
+  //show messages in openning sequence by having array of text
+  //when u click it increments counter and laods the next text
+  //when u reach end of array, startt next sequence by hiding and remove divs
   counter: 0,
   messages: [
     "Welcome to the world of POKEMON!",
@@ -53,6 +60,12 @@ const app = {
       app.switchScreen();
     }
   },
+
+  //peokemon battle/encounter
+  //first fetches data that is sent from initialized event listener
+  //gets the data while adding/removing classes so that we can see the pokemon encounter
+  //sets timeout for certain animation/sound to play at the right time
+  //add event listener for the examine and run away button
   battleText: document.querySelector(".battle_block_text_layer"),
   pokemonCries: document.getElementById("pokemonCries"),
   pokemonPage: (e) => {
@@ -118,11 +131,14 @@ const app = {
           );
       });
   },
+  //initaize the new elements ahead of time so only 1 set is created
   dataName: document.createElement("h3"),
   dataHeight: document.createElement("h3"),
   dataWeight: document.createElement("h3"),
   dataGenus: document.createElement("h3"),
   dataDescription: document.createElement("h3"),
+
+  //show desceription function that includes playing sounds, cleaning the data extracted, and adding it onto the page.
   showDescription: async (pokeDescription, height, weight, name, id) => {
     app.clickSound.load();
     app.clickSound.play();
@@ -160,6 +176,9 @@ const app = {
         pokedexDiv.classList.remove("none");
       });
   },
+
+  //simple function that loads the sound when u run away and changes the text
+  //calls switch screen for transition
   runAwaySound: new Audio("./cries/run.mp3"),
   clickSound: new Audio("./cries/click.wav"),
   pokedexSound: new Audio("./cries/pokedex.wav"),
@@ -178,9 +197,11 @@ const app = {
       app.reset();
     }, 1500);
   },
+  //helper functino to capitalize names
   capitalize: (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   },
+  //shows black screen then removes it
   switchScreen: () => {
     const blackScreen = document.querySelector(".black_screen");
     blackScreen.classList.remove("none");
@@ -188,6 +209,8 @@ const app = {
       blackScreen.classList.add("none");
     }, 1600);
   },
+  //reset to keep the game loop going
+  //essentially turns on and off divs by hiding/showing
   reset: () => {
     const battleBlock = document.querySelector(".battle_block");
     const pokeBoxBlock = document.querySelector(".pokeBox_block");
