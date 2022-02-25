@@ -13,7 +13,6 @@ const app = {
           await fetch(allPokemon[i].url)
             .then((response) => response.json())
             .then((data) => {
-              // console.log(data);
               newImg = document.createElement("img");
               newImg.src =
                 data.sprites.versions["generation-vii"].icons["front_default"];
@@ -82,10 +81,12 @@ const app = {
         pokemonImg.classList.add("battle_block_img");
         pokemonImg.classList.add("none");
         battleBlock.appendChild(pokemonImg);
+
         pokemonImg.classList.remove("none");
         rightBG.classList.remove("lowOpacity");
         charImg.classList.remove("lowOpacity");
         leftBG.classList.remove("lowOpacity");
+
         pokemonImg.classList.add("slideLR");
         rightBG.classList.add("slideLRBackground");
         charImg.classList.add("slideRL");
