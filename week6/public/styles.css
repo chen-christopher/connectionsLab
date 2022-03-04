@@ -1,0 +1,93 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+}
+
+.section_block {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section_block_h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.section_block_h4 {
+  font-size: 2rem;
+}
+.fragrance_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  gap: 1rem;
+}
+.pushDown {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.fragrance_block_img {
+  width: 22rem;
+  height: auto;
+  border-radius: 1rem;
+}
+.fragrance_block_h3 {
+  font-size: 1.5rem;
+}
+.fragrance_block_h4 {
+  font-size: 1rem;
+  text-align: center;
+  width: 55%;
+}
+.category_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.category_block_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+.category_block_content_h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.category_block_content_button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  width: 100%;
+  border: 0.1rem solid #151515;
+  background-color: #151515;
+  margin: 0 0.8em 0.8em 0;
+  border-radius: 1rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+.category_block_content_button:hover {
+  background-color: #ffffff;
+  color: #151515;
+  border: 0.1rem solid #151515;
+}
