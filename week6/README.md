@@ -16,4 +16,4 @@ I did not plan on creating some type of design for the web page but I felt it lo
 
 ### Reflection
 
-For this assignment, I felt like I learned a few things. Before when I was working with Node, it was primarily with React.js. I think it was good to play around with vanilla JS and see how the interactions were supposed to work out.
+For this assignment, I felt like I learned a few things. Before when I was working with Node, it was primarily with React.js and I was not too familiar with it. I think it was good to play around with vanilla JS and see how the interactions were supposed to work out. I'm not too sure if what I did with the requests was the optimal way to do it as I kept getting errors from the server side, but it does work.
