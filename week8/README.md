@@ -11,6 +11,7 @@ The link to the webpage is below:
 The process to creating this assignment was relatively straightforward. I first drew out what I expected the workflow to look like (user voting and then receiving data). The socket event for the client side is called when the user presses a vote button. For the server side, the moment it receives the socket emit event from the client, it will update its data and send an emit signal to ALL clients.
 
 I have attached the wireframe and workflow for this assignment below:
+
 !(wireframe)[wireframe.jpeg]
 !(workflow)[workflow.jpeg]
 
