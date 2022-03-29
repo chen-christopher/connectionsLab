@@ -12,8 +12,8 @@ The process to creating this assignment was relatively straightforward. I first 
 
 I have attached the wireframe and workflow for this assignment below:
 
-!(wireframe)[wireframe.jpeg]
-!(workflow)[workflow.jpeg]
+!(wireframe)[https://raw.githubusercontent.com/chen-christopher/connectionsLab/main/week8/wireframe.jpeg]
+!(workflow)[https://raw.githubusercontent.com/chen-christopher/connectionsLab/main/week8/workflow.jpeg]
 
 Once I established the workflow and overall design, the rest of the project was straightforward. I had to set up all three buttons from the client side and I added a dataset value to each of them to avoid creating 3 separate event listeners. Once the vote button is clicked, the client sends a signal (voting) to the server with the dataset value (which is just the pokemon name). When the server receives the signal (voting), it checks what the pokemon name is and increments the counter for each pokemon accordingly. Afterwards, it sends the updated data (voteResults) to ALL clients. The client is listening for the signal voteResults and upon receiving it, the data is updated accordingly.
 
