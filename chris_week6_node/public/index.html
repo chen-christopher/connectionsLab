@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fragrance List</title>
+  </head>
+  <body>
+    <section class="section_block">
+      <h3 class="section_block_h3">Hello!</h3>
+      <h4 class="section_block_h4">
+        This is just an assortment of fragrances that I currently use.
+      </h4>
+      <h4 class="section_block_h4">
+        Click on any of the buttons below to filter them!
+      </h4>
+    </section>
+    <section class="section_block">
+      <div class="category_block">
+        <div class="category_block_content">
+          <h3 class="category_block_content_h3">Brands</h3>
+          <button id="adp" class="category_block_content_button">
+            Acqua Di Parma
+          </button>
+          <button id="br" class="category_block_content_button">
+            Banana Republic
+          </button>
+          <button id="ch" class="category_block_content_button">Chanel</button>
+          <button id="dp" class="category_block_content_button">
+            Diptyque
+          </button>
+          <button id="gc" class="category_block_content_button">
+            Givenchy
+          </button>
+          <button id="he" class="category_block_content_button">Hermès</button>
+          <button id="jv" class="category_block_content_button">
+            John Varvatos
+          </button>
+          <button id="nyc" class="category_block_content_button">
+            Kierin NYC
+          </button>
+        </div>
+        <div class="category_block_content">
+          <h3 class="category_block_content_h3">Favorites</h3>
+          <button id="top" class="category_block_content_button">Top 3</button>
+        </div>
+        <div class="category_block_content">
+          <h3 class="category_block_content_h3">Gender</h3>
+          <button id="men" class="category_block_content_button">Men</button>
+          <button id="women" class="category_block_content_button">
+            Women
+          </button>
+          <button id="unisex" class="category_block_content_button">
+            Unisex
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section_block fragrance_block"></section>
+  </body>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      app.initialize();
+    })();
+  </script>
+</html>

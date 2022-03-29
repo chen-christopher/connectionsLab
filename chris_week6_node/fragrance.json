@@ -1,0 +1,191 @@
+{
+  "Acqua di Parma Blu Mediterraneo Bergamotto di Calabria": {
+    "brand": "Acqua di Parma",
+    "classification": "woody aromatic",
+    "notes": [
+      "bergamot",
+      "citron",
+      "ginger",
+      "cedar",
+      "flowers",
+      "vetyver",
+      "musk",
+      "benzoin"
+    ],
+    "gender": "unisex",
+    "ranking": 8,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.7826.jpg"
+  },
+  "Acqua di Parma Blu Mediterraneo Fico di Amalfi": {
+    "brand": "Acqua di Parma",
+    "classification": "floral fruity",
+    "notes": [
+      "grapefruit",
+      "bergamot",
+      "citron",
+      "lemon",
+      "fig nectar",
+      "jasmine",
+      "pink pepper",
+      "fig tree",
+      "cedar",
+      "benzoin"
+    ],
+    "gender": "unisex",
+    "ranking": 6,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.1687.jpg"
+  },
+  "Acqua di Parma Blu Mediterraneo Arancia di Capri": {
+    "brand": "Acqua di Parma",
+    "classification": "citrus aromatic",
+    "notes": [
+      "orange",
+      "sicilian nandarin",
+      "bergamot",
+      "lemon",
+      "petitgrain",
+      "cardamom",
+      "caramel",
+      "musk"
+    ],
+    "gender": "unisex",
+    "ranking": 7,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.1685.jpg"
+  },
+  "Artisan Pure": {
+    "brand": "John Varvatos",
+    "classification": "citrus",
+    "notes": [
+      "clementine",
+      "mandarin orange",
+      "lemon",
+      "bergamot",
+      "thyme",
+      "marjoram",
+      "petitgrain",
+      "ginger",
+      "woody notes",
+      "musk",
+      "orris root",
+      "amber"
+    ],
+    "gender": "men",
+    "ranking": 9,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.46623.jpg"
+  },
+  "Gentleman Cologne": {
+    "brand": "Givenchy",
+    "classification": "woody aromatic",
+    "notes": [
+      "bergamot",
+      "lemon",
+      "petitgrain",
+      "iris",
+      "vetiver",
+      "rosemary",
+      "ambroxan",
+      "musk"
+    ],
+    "gender": "men",
+    "ranking": 4,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.53694.jpg"
+  },
+  "Eau Rose": {
+    "brand": "Diptyque",
+    "classification": "floral fruity",
+    "notes": [
+      "litchi",
+      "black currant",
+      "bergamot",
+      "rose",
+      "geranium",
+      "jasmine",
+      "musk",
+      "virginia cedar",
+      "white honey"
+    ],
+    "gender": "women",
+    "ranking": 5,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.14214.jpg"
+  },
+
+  "Un Jardin Sur Le Nil": {
+    "brand": "Hermès",
+    "classification": "floral fruity",
+    "notes": [
+      "grapefruit",
+      "green mango",
+      "tomato",
+      "carrot",
+      "lotus",
+      "bulrush",
+      "orange",
+      "hiacynth",
+      "peony",
+      "musk",
+      "iris",
+      "incense",
+      "labdanum",
+      "cinnamon"
+    ],
+    "gender": "unisex",
+    "ranking": 1,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.18.jpg"
+  },
+  "Allure Homme Edition Blanche": {
+    "brand": "Chanel",
+    "classification": "amber",
+    "notes": [
+      "sicillian lemon",
+      "madagascar vanilla",
+      "pink pepper",
+      "calabrian bergamot",
+      "sandalwood",
+      "tonka bean",
+      "tahitian vetiver",
+      "musk",
+      "amber",
+      "cedar"
+    ],
+    "gender": "men",
+    "ranking": 2,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.2653.jpg"
+  },
+  "78 Vintage Green": {
+    "brand": "Banana Republic",
+    "classification": "floral woody musk",
+    "notes": [
+      "bergamot",
+      "green leaves",
+      "mandarin orange",
+      "green tea",
+      "fig",
+      "jasmine",
+      "magnolia",
+      "vetiver",
+      "musk",
+      "cedar"
+    ],
+    "gender": "unisex",
+    "ranking": 3,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.45027.jpg"
+  },
+  "Pier NY": {
+    "brand": "Kierin NYC",
+    "classification": "aromatic aquatic",
+    "notes": [
+      "eucalyptus",
+      "fig",
+      "salt",
+      "violet",
+      "mimosa",
+      "seaweed",
+      "sage",
+      "tonka bean",
+      "woody notes"
+    ],
+    "gender": "unisex",
+    "ranking": 10,
+    "image": "https://fimgs.net/mdimg/perfume/375x500.69897.jpg"
+  }
+}

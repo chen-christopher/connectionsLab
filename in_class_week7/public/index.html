@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Not Twitter</title>
+  </head>
+  <body>
+    <header class="header_container">
+      <img class="logo_img" src="./images/twitter.png" />
+      <h1 class="header_h1">INSERT Name</h1>
+    </header>
+    <section class="container content_container">
+      <ul class="posts">
+        <!-- <li class="post">
+          <h3 class="post_author">Name</h3>
+          <h4 class="post_date">DATE | TIME</h4>
+          <h4 class="post_content">More details</h4>
+        </li> -->
+        <!-- <li class="post">
+          <h3 class="post_author">Name</h3>
+          <h4 class="post_date">DATE | TIME</h4>
+          <h4 class="post_content">More details</h4>
+        </li>
+        <li class="post">
+          <h3 class="post_author">Name</h3>
+          <h4 class="post_date">DATE | TIME</h4>
+          <h4 class="post_content">More details</h4>
+        </li>
+        <li class="post">
+          <h3 class="post_author">Name</h3>
+          <h4 class="post_date">DATE | TIME</h4>
+          <h4 class="post_content">More details</h4>
+        </li> -->
+      </ul>
+    </section>
+    <section class="container button_container">
+      <button class="refresh_button">Refresh</button>
+      <button class="new_button">New Post</button>
+    </section>
+
+    <section class="create none">
+      <div class="create_container">
+        <div class="input_container">
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="create_name" required />
+        </div>
+        <div class="input_container">
+          <label for="post">Post :</label>
+          <input type="text" id="post" name="create_post" required />
+        </div>
+        <div class="input_button_container">
+          <button class="create_button" id="create_button">Post</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      app.initialize();
+    })();
+  </script>
+</html>
