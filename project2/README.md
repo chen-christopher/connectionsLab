@@ -10,7 +10,7 @@ Link to glitch: [https://fire-shining-magnesium.glitch.me/](https://fire-shining
 
 Link to Github Repository: 
 
-![Screenshot from Jackbox Party Pack 8](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2bcf00e-c9f9-447c-a568-54aab639158b/Untitled.png)
+![example.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2bcf00e-c9f9-447c-a568-54aab639158b/Untitled.png)
 
 Screenshot from Jackbox Party Pack 8
 
@@ -51,7 +51,7 @@ We started with identifying the design objectives of the game.
 
 With these design objectives in mind, we created a wireframe on Figma, along with all the visuals we would need for the game.
 
-![Screen Shot 2022-04-15 at 11.27.54 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2fae382-b80d-47f4-aeb2-98f557109a2c/Screen_Shot_2022-04-15_at_11.27.54_AM.png)
+![wireframe.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2fae382-b80d-47f4-aeb2-98f557109a2c/Screen_Shot_2022-04-15_at_11.27.54_AM.png)
 
 ### Coding
 
