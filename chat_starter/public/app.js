@@ -2,9 +2,16 @@ console.log("client says hello");
 
 const app = {
   initialize: () => {
+    let userName = document.getElementById("user-name");
+    userName.innerHTML = sessionStorage.getItem("name");
     let socket = io();
     socket.on("connect", () => {
       console.log("connected to server");
+      let data = {
+        name: sessionStorage.getItem("name"),
+        room: sessionStorage.getItem("room"),
+      };
+      socket.emit("userData", data);
     });
     socket.on("userTyping", () => {
       console.log("user is typing");
@@ -30,9 +37,12 @@ const app = {
     });
     console.log("load");
     const submitButton = document.getElementById("send-button");
+    const chatForm = document.getElementById("chat-form");
 
-    submitButton.addEventListener("click", () => {
-      let name = document.getElementById("name-input").value;
+    chatForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      // let name = document.getElementById("name-input").value;
+      let name = sessionStorage.getItem("name");
       let msg = document.getElementById("msg-input").value;
       console.log(name, msg);
 

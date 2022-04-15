@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>D3 Data</h1>
+    <div id="container"></div>
+    <h2 id="astro-name"></h2>
+    <h1>b4 graph</h1>
+    <div id="observablehq-canvas-8ae480ba"></div>
+  </body>
+  <script src="https://d3js.org/d3.v7.js"></script>
+  <script type="module">
+    import {
+      Runtime,
+      Inspector,
+    } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@d3/world-tour.js?v=3";
+    new Runtime().module(define, (name) => {
+      if (name === "canvas")
+        return new Inspector(
+          document.querySelector("#observablehq-canvas-8ae480ba")
+        );
+    });
+  </script>
+</html>
