@@ -7,7 +7,7 @@ For this project, I wanted to create a popularity poll for the three best pokemo
 For this project, I used D3.js to create my web page. It is a very simple web page that uses D3 to create a pie chart consisting of the different types of Pokemon. D3.js has moved towards using the Observable notebook for most of its functionality. Thus, the pie chart shown on the web page is embedded from the Oberservable notebook. I originally planned on creating the racing bar chart but I had a hard time following the example code.
 
 The link to the webpage is below:
-https://zesty-rhinestone-gasoline.glitch.me/
+https://chen-christopher.github.io/connectionsLab/d3
 
 ### Process
 
