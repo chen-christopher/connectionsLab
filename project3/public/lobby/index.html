@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Joti+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" id="tabicon" href="../images/clover.png">
+
+    <link href="style.css" rel="stylesheet" />
+    <title id="tabname">Luck Game</title>
+  </head>
+  <body>
+    <img id="lobby_wall" class="lobby_wall" src="images/lobbyWall.png" />
+    <div id="dark_layer" class="dark_layer"></div>
+
+    <section id="lobby_container" class="container">
+      <h1 class="landing_header">LOBBY</h1>
+      <h3 id="code_text"></h3>
+      <div id="players_container" class="players_container">
+        <div id="playerDiv1" class="player_container">
+          <img
+            id="player1star"
+            class="none playerStar"
+            src="../images/star.png"
+          />
+          <img class="mokokoImg" id="player1" src="../images/emptyMokoko.png" />
+          <h3 id="player1Header">Waiting...</h3>
+        </div>
+        <div id="playerDiv2 " class="player_container">
+          <img
+            id="player2star"
+            class="playerStar none"
+            src="../images/star.png"
+          />
+          <img class="mokokoImg" id="player2" src="../images/emptyMokoko.png" />
+          <h3 id="player2Header">Waiting...</h3>
+        </div>
+        <div id="playerDiv3" class="player_container">
+          <img
+            id="player3star"
+            class="none playerStar"
+            src="../images/star.png"
+          />
+          <img class="mokokoImg" id="player3" src="../images/emptyMokoko.png" />
+          <h3 id="player3Header">Waiting...</h3>
+        </div>
+        <div id="playerDiv4" class="player_container">
+          <img
+            id="player4star"
+            class="none playerStar"
+            src="../images/star.png"
+          />
+          <img class="mokokoImg" id="player4" src="../images/emptyMokoko.png" />
+          <h3 id="player4Header">Waiting...</h3>
+        </div>
+      </div>
+      <button class="landing_button" id="play_button">Start Game</button>
+      <button class="landing_button" id="back_button">Back</button>
+    </section>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="lobby.js"></script>
+    <script>
+      (function () {
+        app.initialize();
+      })();
+    </script>
+  </body>
+</html>
